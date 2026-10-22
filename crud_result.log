@@ -1,0 +1,40 @@
+=== INICIANDO TESTE CRUD - Thu Oct 22 07:13:01 PM UTC 2026 ===
+Servidor alvo: http://localhost:3000
+
+[1/4] Cadastrando primeiro veiculo...
+{"status":"criado","dados":{"id":4,"modelo":"FH 540","placa":"KLL-9090","status":"disponivel"}}
+ID capturado para o primeiro veiculo: 4
+
+[2/4] Cadastrando segundo veiculo...
+{"status":"criado","dados":{"id":5,"modelo":"R450","placa":"XYZ-8888","status":"disponivel"}}
+ID capturado para o segundo veiculo: 5
+
+[3/4] Atualizando status do veiculo 1 (ID: 4)...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   123  100   103  100    20  39148   7601 --:--:-- --:--:-- --:--:-- 61500
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 103
+ETag: W/"67-2wKe39n7VkDWPEYOajw6SF+OJas"
+Date: Thu, 22 Oct 2026 19:13:01 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"status":"status_atualizado","dados":{"id":4,"modelo":"FH 540","placa":"KLL-9090","status":"EM_ROTA"}}
+[4/4] Deletando veiculo 2 (ID: 5)...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    69  100    69    0     0  29525      0 --:--:-- --:--:-- --:--:-- 34500
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 69
+ETag: W/"45-ICI2SACa51zM/JKZQKlLTj9Hk7Y"
+Date: Thu, 22 Oct 2026 19:13:01 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"status":"removido","mensagem":"Veiculo ID 5 removido com sucesso."}
+=== TESTES CONCLUIDOS ===
